@@ -10,14 +10,15 @@ window.onload = function() {
     }
 };
 
-function jogar(celula) {
-    if (celula.innerHTML == "") {
-        celula.innerHTML = jogador;
-        jogadas++;
-        verificarVencedor();
-        mudarJogador();
-    }
+ function jogar(celula) {
+  if (celula.innerHTML == "") {
+    celula.innerHTML = jogador;
+    jogadas++;
+    verificarVencedor();
+    mudarJogador();
+  }
 }
+
 
 function verificarVencedor() {
     var celulas = document.getElementsByClassName("cell");
