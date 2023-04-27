@@ -9,6 +9,13 @@ function jogar(celula) {
 		mudarJogador();
 	}
 }
+var celulas = document.getElementsByClassName("cell");
+
+for (var i = 0; i < celulas.length; i++) {
+    celulas[i].addEventListener("click", function() {
+        jogar(this);
+    });
+}
 
 function verificarVencedor() {
 	var celulas = document.getElementsByClassName("cell");
